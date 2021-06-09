@@ -1,0 +1,44 @@
+--http://docs.ros.org/en/fuerte/api/pangolin_wrapper/html/namespacepangolin.html
+-ProjectionMatrix
+OpenGlMatrixSpec ProjectionMatrixRUB_BottomLeft(int w, int h, 
+double fu, double fv, double u0, double v0, double zNear, double zFar)
+{
+   // http://www.songho.ca/opengl/gl_projectionmatrix.html
+   const double L = +(u0) * zNear / -fu;
+   const double T = +(v0) * zNear / fv;
+   const double R = -(w-u0) * zNear / -fu;
+   const double B = -(h-v0) * zNear / fv;
+ 
+   OpenGlMatrixSpec P;
+   P.type = GlProjectionStack;
+   std::fill_n(P.m,4*4,0);
+
+   P.m[0*4+0] = 2 * zNear / (R-L);
+   P.m[1*4+1] = 2 * zNear / (T-B);
+   P.m[2*4+2] = -(zFar +zNear) / (zFar - zNear);
+   P.m[2*4+0] = (R+L)/(R-L);
+   P.m[2*4+1] = (T+B)/(T-B);
+   P.m[2*4+3] = -1.0;
+   P.m[3*4+2] =  -(2*zFar*zNear)/(zFar-zNear);
+
+   return P;
+
+pangolin::ProjectionMatrix(w, h, 400, 400, w / 2.0, h / 2.0, 0.1,
+                                       10000),
+-ModelViewLookAt
+https://www.programmersought.com/article/49925364118/
+Set the viewing angle,pangolin::ModelViewLookAt(0, -0.1, -1.8, 0, 0, 0, 0.0, -1.0, 0.0));
+Means that the origin of the viewing coordinates (0,0,0) is set in the world coordinates (0, -0.1, -1.8) and the Y axis is set up
+
+- pango.CreateDisplay().SetBounds
+https://www.programmersought.com/article/82076838140/
+-example
+https://www.programmersought.com/article/99587498690/
+
+
+
+
+
+
+
+

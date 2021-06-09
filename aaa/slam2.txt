@@ -1,0 +1,346 @@
+...........ORB_SLAM2
+--https://github.com/raulmur/ORB_SLAM2
+--ORB_SLAM2 version condition.
+https://www.programmersought.com/article/38096512050/
+
+
+
+--opencv download
+http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.4.11/opencv-2.4.11.zip
+https://sourceforge.net/projects/opencvlibrary/files/
+#https://github.com/opencv/opencv/archive/2.4.13.6.zip
+
+-install opencv-2.4.11 in ubuntu
+https://gist.github.com/SoonminHwang/e010ec8fd6de8a1c2c4d5d5ff854109b
+https://www.programmersought.com/article/38096512050/
+
+/////////////////////////////////////////////////////////
+.......SEMANTIC_VISUAL_SUPPORTED_ODEMETRY
+////////////////////////////////////////////////////////
+
+--https://github.com/yiakwy/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY
+---ubuntu 18.04 download
+http://old-releases.ubuntu.com/releases/18.04.4/
+
+--
+/////////////////////////////////////////
+error "$'\r': command not found"
+
+sudo apt-get update
+sudo apt-get install aptitude
+
+https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/
+
+sudo apt-get update
+sudo apt-get install nodejs npm
+
+sudo apt-get install dos2unix
+dos2unix scripts/install.sh
+
+??? Looks like an `npm install -g` ???
+??? /usr/lib/node_modules/phantomjs/install.js ???
+https://github.com/Medium/phantomjs/releases/download/v2.1.1/phantomjs-2.1.1-linux-x86_64.tar.bz2
+
+--sudo apt-get install git
+
+--visual code install
+
+https://code.visualstudio.com/docs/setup/linux
+sudo apt install code
+sudo snap install --classic code
+#sudo apt install code_1.55.0-1617120720_amd64.deb
+
+--bash scripts/install.sh
+
+--anaconda for python3.6
+https://repo.anaconda.com/archive/
+Anaconda3-5.1.0XXX or Anaconda3-5.2.0XXX
+
+bash aaa.sh
+export PATH=/home/aaa/anaconda3/bin:$PATH
+source ~/.bashrc
+
+--conda virtual set
+https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart
+#https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/
+
+conda create --name py36 python=3.6
+source activate py36
+source deactivate
+conda activate py36
+
+--install package for ROS
+source activate py36
+pip install catkin-tools
+#pip install rospy 
+pip install rospkg
+pip install cython
+
+--setup lang
+https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html
+locale  # check for UTF-8
+sudo apt update && sudo apt install locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+locale  # verify settings
+
+
+conda install pytorch-cpu torchvision-cpu -c pytorch
+
+--
+copy PythonAPI into /home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/coco
+
+--error fix (vcpkg install)
+sudo apt-get update
+sudo apt-get install build-essential tar curl zip unzip
+git clone https://github.com/microsoft/vcpkg
+cd vcpkg  #vcpkg directory
+./bootstrap-vcpkg.sh
+
+--cmake: command not found
+sudo apt-get install build-essential cmake
+
+sudo apt-get install ccache
+
+--powershell install
+snap install powershell --classic
+
+--/home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/coco/common/maskApi.c
+please insert { } into "for"
+///////////////////////////////
+pip install tensorflow_gpu-2.2.0-cp36-cp36m-manylinux2010_x86_64.whl
+--/python/requirements.txt
+#tensorflow-gpu==2.2.0
+
+--bash scripts/init_python.sh
+dos2unix scripts/init_python.sh
+dos2unix scripts/utils.sh
+bash scripts/init_python.sh
+
+///////////////////////////////
+--google test update
+https://zwarrior.medium.com/install-google-test-framework-gtest-on-ubuntu-20-04-368eb6951b12
+source activate py36
+sudo apt-get install libgtest-dev
+sudo apt-get install cmake
+cd /usr/src/gtest
+sudo cmake CMakeLists.txt
+sudo make
+sudo cp ./libgtest*.a /usr/lib
+source deactivate
+
+--
+sudo apt-get install dpkg
+sudo apt autoremove
+sudo apt update
+sudo apt-get install libavformat-dev
+sudo apt-get install libavcodec-dev
+sudo apt-get install libavutil-dev
+sudo apt-get install libswscale-dev
+sudo apt-get install libgstreamer-plugins-base1.0-dev
+sudo apt-get install gstreamer1.0-plugins-good
+sudo apt install libgstreamer1.0-dev
+sudo apt-get install libjemalloc-dev=3.6.0-11
+sudo apt install tesseract-ocr* liblept5 leptonica-progs libleptonica-dev
+sudo apt-get install libdc1394-22-dev
+sudo apt-get install libleptonica-dev libtesseract-dev
+sudo apt -y install freeglut3-dev
+sudo apt-get install libgtk-3-dev
+sudo apt update
+sudo apt install libavresample-dev
+sudo apt install libtiff-dev
+sudo apt install jasper
+sudo apt install libjava3d-jni
+sudo apt install libjna-jni
+sudo apt install flake8
+sudo apt-get install libhdf5-dev
+sudo apt-get install libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev
+
+sudo apt-get install cmake git pkg-config
+sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev \
+libpng-dev  
+
+???
+-- Could NOT find Jasper (missing: JASPER_LIBRARIES JASPER_INCLUDE_DIR) 
+-- Module opencv_ovis disabled because OGRE3D was not found
+-- No preference for use of exported gflags CMake configuration set, and no hints for include/library directories provided. Defaulting to preferring an installed/exported gflags CMake configuration if available.
+???
+
+--opencv_contrib-4.2.0.tar.gz
+https://ftp.osuosl.org/pub/blfs/conglomeration/opencv/
+#sudo apt-get opencv_contrib-4.2.0.tar.gz
+
+--please change into scripts/thirdparties/linux/deb/apt/install_opencv.sh
+file:///home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/opencv-4.2.0.tar.gz
+opencv4_pkg_source="file:///home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/opencv-4.2.0.tar.gz"
+opencv4_contrib_source="file:///home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/opencv_contrib-4.2.0.tar.gz"
+
+--bash scripts/thirdparties/linux/deb/apt/install_opencv.sh
+dos2unix scripts/thirdparties/linux/deb/apt/install_opencv.sh
+///////////////////////////////////////////////////////////
+
+--download face_landmark_model.dat
+https://raw.githubusercontent.com/opencv/opencv_3rdparty/8afa57abc8229d611c4937165d20e2a2d9fc5a12/face_landmark_model.dat
+please make directory and insert file
+/vendors/github.com/opencv/build/share/opencv4/testdata/cv/face/face_landmark_model.dat
+
+-- ippicv_2019_lnx_intel64_general_20180723.tgz
+https://github.com/opencv/opencv_3rdparty/tree/ippicv/master_20180723/ippicv
+https://www.programmersought.com/article/62664031563/
+
+please insert above file into /home/aaa/vendors/github.com/ 
+please change download path.
+/home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/opencv/3rdparty/ippicv/ippicv.cmake
+47 line :https://raw.githubusercontent.com/opencv/opencv_3rdparty/${IPPICV_COMMIT}/ippicv/
+into    file:///home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/
+
+--
+ln -s /usr/local/lib/python3.6/site-packages/cv2/python-3.6  /home/aaa/anaconda3/envs/py36/lib/python3.6/site-packages/cv2/
+
+please change root permission
+sudo -i
+cd /home/aaa/anaconda3/envs/py36/lib/python3.6/site-packages/cv2/python-3.6
+
+mv cv2.cpython-36m-x86_64-linux-gnu.so cv2.so
+exit or logout
+
+//////////////////////////////////////////////////////////////////
+
+--bug fix
+sudo apt-get update
+sudo apt-get install build-essential gdb
+whereis g++
+whereis gdb
+
+--https://freesoft.dev/program/161793273
+sudo ldconfig
+
+--
+https://github.com/protocolbuffers/protobuf/releases?after=v3.8.0
+please change scripts/install_protoc.sh 
+VERSION="3.8.0"
+dos2unix scripts/install_protoc.sh
+bash scripts/install_protoc.sh
+
+--warning: ‘void* __builtin___memcpy_chk
+
+////////////////////////////////////////////////////////////////////////////
+
+--
+git submodule add -f https://github.com/stevenlovegrove/Pangolin.git vendors/github.com/Pangolin
+git submodule add -f https://github.com/ceres-solver/ceres-solver.git vendors/github.com/Ceres-solver
+https://github.com/RainerKuemmerle/g2o
+https://github.com/uoip/g2opy
+
+https://github.com/waleedka/coco
+https://github.com/matterport/Mask_RCNN
+https://github.com/PaddlePaddle/Paddle
+--
+dos2unix scripts/build_ceres.sh
+bash scripts/build_ceres.sh
+dos2unix scripts/build_pangolin.sh
+bash scripts/build_pangolin.sh
+dos2unix scripts/build_g2o.sh
+bash scripts/build_g2o.sh 
+dos2unix scripts/build_g2opy.sh
+bash scripts/build_g2opy.sh
+
+///////////////////////////////////////////////
+----/home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/cmake/pybind11/.appveyor.yml
+    Start-FileDownload 'http://bitbucket.org/eigen/eigen/get/3.3.9.zip'
+--/home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/cmake/pybind11/.travis.yml
+    wget -q -O eigen.tar.gz https://bitbucket.org/eigen/eigen/get/3.3.9.tar.gz
+
+--error fix #cc1plus: out of memory allocating 40 bytes after a total of 155467776 bytes
+sudo -i
+su - root
+# for one GB of swap
+dd if=/dev/zero of=tmpswap bs=1024 count=1M
+mkswap tmpswap
+swapon tmpswap
+exit exit
+sudo su
+
+
+dos2unix bash scripts/build_tensorflow.sh
+
+sudo apt-get remove unzip
+sudo apt-get remove --auto-remove unzip
+sudo apt-get purge unzip
+sudo apt-get purge --auto-remove unzip
+http://ports.ubuntu.com/pool/main/u/unzip/
+https://askubuntu.com/questions/378558/unable-to-locate-package-while-trying-to-install-packages-with-apt
+sudo dpkg -i <name>
+jar xvf <file.zip>
+
+
+
+
+https://mirror.genesisadaptive.com/ubuntu/pool/main/u/unzip/
+sudo dpkg -i unzip_6.0-20ubuntu1_amd64.deb
+sudo alien package_file.rpm
+
+
+https://github.com/tensorflow/tensorflow
+please change https://github.com/FloopCZ/tensorflow_cc.git
+into file:///home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/tensorflow-2.2.0.tar.gz
+
+bash scripts/build_tensorflow.sh
+
+--error fix
+--llvm-f402e682d0ef5598eeffc9a21a691b03e602ff58.tar.gz download
+http://ftp.jaist.ac.jp/pub/Linux/Gentoo/distfiles/0b/llvm-f402e682d0ef5598eeffc9a21a691b03e602ff58.tar.gz
+llvm-project-387c3f74fd8efdc0be464b0e1a8033cc1eeb739c.tar.gz
+https://d.serctl.com/?uuid=70142311-b6b9-4254-889b-1ba0411f809e
+please open /home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/tensorflow_cc/tensorflow_cc/build/tensorflow/tensorflow/workspace.bzl
+    # Check out LLVM and MLIR from llvm-project.
+    LLVM_COMMIT = "387c3f74fd8efdc0be464b0e1a8033cc1eeb739c"
+    LLVM_SHA256 = "5648d1bdd933f45aa6556cf104b32a0418121ce6961f5f47e8ef5bc6e428434f"
+    LLVM_URLS = [
+        "https://storage.googleapis.com/mirror.tensorflow.org/github.com/llvm/llvm-project/archive/{commit}.tar.gz".format(commit = LLVM_COMMIT),
+        "https://github.com/llvm/llvm-project/archive/{commit}.tar.gz".format(commit = LLVM_COMMIT),
+  into  "file:///root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/{commit}.tar.gz".format(commit = LLVM_COMMIT),"
+////////////////////////////////////////////////////
+
+--
+mkdir -p build && cd build && cmake .. && make -j8
+
+--error fix  #CMakeLists.txt:123 (include)
+/home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/CMakeLists.txt
+ 123 line #
+
+--SEMANTIC_VISUAL_SUPPORTED_ODEMETRY\cmake\Modules\FindEigen3.cmake
+50 line "/home/aaa/.cache/bazel/_bazel_aaa/f9f2fddbe55b8f8e77c456fee05012e6/external/eigen_archive"
+
+--Unable to find the Boost header files.  Please set BOOST_ROOT to the root   directory containing Boost or BOOST_INCLUDEDIR to the directory containing   Boost's headers.
+sudo apt-get install libboost-all-dev
+
+--Could NOT find TBB (missing: TBB_INCLUDE_DIRS TBB_LIBRARIES)
+sudo apt-get update
+sudo apt-get install libtbb-dev
+
+--Could NOT find PythonLibs (missing: PYTHON_INCLUDE_DIRS) (Required is at least version "3.6")
+sudo apt-get install git dpkg-dev cmake g++ gcc binutils libx11-dev \
+libxpm-dev libxft-dev libxext-dev
+
+sudo apt-get install gfortran libssl-dev libpcre3-dev \
+xlibmesa-glu-dev libglew1.5-dev libftgl-dev libmysqlclient-dev \
+libfftw3-dev libcfitsio-dev graphviz-dev \
+libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev \
+libkrb5-dev libgsl0-dev libqt4-dev
+
+--/root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/build/proto_codec/devices/camera.pb.cc:4:10: fatal error: devices/camera.pb.h: No such file or directory
+ include "devices/camera.pb.h"  into  include "camera.pb.h"
+--/root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/modules/base/io/img.h:49:10: fatal error: devices/camera.pb.h
+ include "devices/camera.pb.h"  into  include "../../../build/proto_codec/devices/camera.pb.h"	
+
+
+--‘MatrixX’ in namespace ‘Eigen’ does not name a template type
+/root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/modules/base/io/img.h:218:29: error: ‘MatrixX’
+cd /usr/include
+please mv eigen3 aaaeigen3.
+
+
+
+

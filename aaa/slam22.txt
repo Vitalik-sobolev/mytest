@@ -1,0 +1,545 @@
+---------
+--root install
+sudo -i
+
+--error: Could not get lock /var/lib/dpkg/lock
+
+https://itsfoss.com/could-not-get-lock-error/
+https://pingvinus.ru/note/dpkg-lock
+ps aux | grep -i apt
+
+
+sudo apt-get update
+sudo apt-get install aptitude
+sudo apt-get install git
+sudo apt-get install nodejs
+sudo apt-get install build-essential 
+sudo apt-get install chrpath 
+sudo apt-get install libssl-dev 
+sudo apt-get install libxft-dev
+sudo apt-get install libfreetype6 
+sudo apt-get install libfreetype6-dev 
+sudo apt-get install libfontconfig1 
+sudo apt-get install libfontconfig1-dev
+sudo apt-get install tar
+sudo apt-get curl
+sudo apt-get zip
+sudo apt-get unzip
+
+wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
+tar xvjf phantomjs-2.1.1-linux-x86_64.tar.bz2 -C /usr/local/share/
+sudo ln -sf /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin
+phantomjs --version
+sudo apt-get install dos2unix
+dos2unix scripts/install.sh
+
+
+--visual studio code install
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt update
+sudo apt install code
+sudo apt update
+sudo dpkg -i code_1.55.0-1617120720_amd64.deb
+
+--bash scripts/install.sh
+
+cd /tmp
+curl -O https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+sha256sum Anaconda3-5.2.0-Linux-x86_64.sh
+bash Anaconda3-5.2.0-Linux-x86_64.sh
+
+source ~/.bashrc
+export PATH=/root/anaconda3/bin:$PATH
+conda create --name py36 python=3.6
+source activate py36
+source deactivate
+conda activate py36
+
+--install package for ROS
+source activate py36
+pip install catkin-tools
+pip install rospkg
+pip install cython
+
+--setup lang
+locale  
+sudo apt update && sudo apt install locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+locale  
+
+conda install pytorch-cpu torchvision-cpu -c pytorch
+
+#sudo apt-get update
+#sudo apt-get install build-essential tar curl zip unzip
+
+#cd /tmp
+git clone https://github.com/microsoft/vcpkg
+cd vcpkg  
+./bootstrap-vcpkg.sh
+
+sudo apt-get install build-essential cmake
+sudo apt-get install ccache
+snap install powershell --classic
+
+
+cd ~/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com
+git submodule add -f https://github.com/waleedka/coco.git
+cd /coco/common/maskApi.c
+sudo nano maskApi.c
+please insert { } into "for"
+
+python/requirement.txt 
+22 line: protobuf=3.8.0
+
+dos2unix  scripts/init_python.sh
+dos2unix scripts/utils.sh
+--bash scripts/init_python.sh
+
+source activate py36
+sudo apt-get install libgtest-dev
+sudo apt-get install cmake
+cd /usr/src/gtest
+sudo cmake CMakeLists.txt
+sudo make
+sudo cp ./libgtest*.a /usr/lib
+source deactivate
+
+sudo apt update
+sudo apt install python-pip
+sudo apt-get install dpkg
+sudo apt-get install libavformat-dev
+sudo apt-get install libswscale-dev
+sudo apt-get install libgstreamer-plugins-base1.0-dev
+#sudo apt-get install gstreamer1.0-plugins-good
+#sudo apt install libgstreamer1.0-dev
+sudo apt-get install libjemalloc-dev=3.6.0-11
+sudo apt install liblept5
+sudo apt install leptonica-progs
+sudo apt install libleptonica-dev
+sudo apt-get install libdc1394-22-dev
+sudo apt-get install libtesseract-dev
+sudo apt -y install freeglut3-dev
+sudo apt-get install libgtk-3-dev
+sudo apt install libavresample-dev
+sudo apt install libtiff-dev
+sudo apt install jasper
+sudo apt install libjava3d-jni
+sudo apt install libjna-jni
+sudo apt install flake8
+sudo apt-get install libhdf5-dev
+sudo apt-get install libglfw3-dev
+sudo apt-get install python-dev
+sudo apt-get install python-numpy
+sudo apt-get install libtbb2 
+sudo apt-get install libtbb-dev
+sudo apt install libopenblas-dev
+sudo apt install libopenblas-base
+sudo apt-get install libssl-dev
+sudo apt-get install libcurl4-openssl-dev
+sudo apt-get install libboost-all-dev
+sudo apt install doxygen
+sudo apt install graphviz
+
+--please change into scripts/thirdparties/linux/deb/apt/install_opencv.sh
+opencv4_pkg_source="file:///home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/opencv-4.2.0.tar.gz"
+opencv4_contrib_source="file:///home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/opencv_contrib-4.2.0.tar.gz"
+
+dos2unix scripts/thirdparties/linux/deb/apt/install_opencv.sh
+--bash scripts/thirdparties/linux/deb/apt/install_opencv.sh
+
+--OpenBLAS error
+/root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/opencv/cmake/OpenCVFindOpenBLAS.cmake
+realpath file name
+please insert the below:
+Open_BLAS_INCLUDE_SEARCH_PATHS path: /usr/include/x86_64-linux-gnu
+Open_BLAS_LIB_SEARCH_PATHS path: /usr/lib/x86_64-linux-gnu
+
+sudo apt install liblapacke-dev
+sudo ln -s /usr/include/lapacke.h /usr/include/x86_64-linux-gnu
+
+bash scripts/thirdparties/linux/deb/apt/install_opencv.sh
+
+???
+-- Could NOT find Jasper (missing: JASPER_LIBRARIES JASPER_INCLUDE_DIR) 
+???
+
+ln -s /usr/local/lib/python3.6/site-packages/cv2/python-3.6  /root/anaconda3/envs/py36/lib/python3.6/site-packages/cv2/
+sudo -i
+cd /root/anaconda3/envs/py36/lib/python3.6/site-packages/cv2/python-3.6
+mv cv2.cpython-36m-x86_64-linux-gnu.so cv2.so
+exit or logout
+
+git submodule add -f https://github.com/stevenlovegrove/Pangolin.git Pangolin
+git submodule add -f https://github.com/ceres-solver/ceres-solver.git Ceres-solver
+git submodule add -f https://github.com/matterport/Mask_RCNN.git
+pip install -r requirements.txt
+python3 setup.py install
+
+git submodule add -f https://github.com/PaddlePaddle/Paddle.git
+# CPU
+pip install paddlepaddle
+# GPU
+pip install paddlepaddle-gpu
+
+
+git submodule add -f https://github.com/waleedka/coco.git
+cd PythonAPI
+make
+git submodule add -f https://github.com/RainerKuemmerle/g2o.git
+git submodule add -f https://github.com/uoip/g2opy.git
+
+bash scripts/build_ceres.sh
+-------------------------------------------
+dos2unix scripts/build_pangolin.sh
+dos2unix scripts/utils.sh
+bash scripts/build_pangolin.sh
+cd build
+cmake --build . --target pangolin_doc
+make
+sudo make install
+../Pangolin/external/git clone git clone https://github.com/pybind/pybind11.git
+
+--error: ‘numeric_limits’ is not a member of ‘std’ std::numeric_limits<float>::quiet_NaN() 
+please insert in admin:///root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/Pangolin/include/pangolin/gl/colour.h
+#include <limits>
+--/github.com/Pangolin/src/CMakeLists.txt
+set (EIGEN_INCLUDE_DIR "/root/.cache/bazel/_bazel_root/eb067d0d22129024369669487b852114/external/eigen_archive")
+
+please change  find_package(Eigen QUIET)
+ 		  if(EIGEN_FOUND)
+into   find_package(Eigen3 QUIET)
+  	  if(EIGEN3_FOUND)
+--/Pangolin/pyexamples/python SimpleDisplay.py
+
+
+--------------------------------------------
+bash scripts/build_g2o.sh 
+bash scripts/build_g2opy.sh
+
+--/home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/cmake/pybind11/.appveyor.yml
+    Start-FileDownload 'http://bitbucket.org/eigen/eigen/get/3.3.9.zip'
+--/home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/cmake/pybind11/.travis.yml
+    wget -q -O eigen.tar.gz https://bitbucket.org/eigen/eigen/get/3.3.9.tar.gz
+
+sudo -i
+su - root
+# for one GB of swap
+dd if=/dev/zero of=tmpswap bs=1024 count=1M
+mkswap tmpswap
+swapon tmpswap
+exit exit
+
+please change scripts/install_protoc.sh 
+VERSION="3.8.0"
+--bash scripts/install_protoc.sh
+
+--bash scripts/build_tensorflow.sh
+please change scripts/build_tensorflow.sh
+/tensorflow_cc/tensorflow_cc
+rm -r build
+/tensorflow_cc/Dockerfiles/BAZEL_VERSION
+2.0.0
+/tensorflow_cc/Dockerfiles/archlinux-cuda
+cuda>=10.2
+/tensorflow_cc/tensorflow_cc/PROJECT_VERSION
+2.2.0-rc0
+#/tensorflow_cc/tensorflow_cc/cmake/build_tensorflow.sh.in
+#sudo bazel build --jobs=8 --config=monolithic tensorflow:libtensorflow_all.so
+#/tensorflow_cc/tensorflow_cc/cmake/TensorflowBase.cmake
+# DOWNLOAD_DIR "tensorflow"
+
+
+#/tensorflow_cc/tensorflow_cc/build/CNameCache.txt
+
+--docker install
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
+
+--nvidia
+#https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html
+#https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#post-installation-actions
+#https://sh-tsang.medium.com/geforce-gtx-1080ti-gpu-nvidia-driver-installation-in-ubuntu-18-04-1d3407ecfd5e
+https://sh-tsang.medium.com/tutorial-geforce-gtx-1080ti-gpu-nvidia-driver-installation-in-ubuntu-18-04-2019-e87ddeadbbc1
+apt-get autoremove --purge nvidia-*
+
+
+--check graphic card 
+sudo lshw -C display
+sudo lshw -c video
+lspci -k | grep -A 3 -i "VGA"
+lspci | egrep ' VGA|3D' 
+--driver check
+lspci -k
+modinfo i915
+
+--check hard info 
+sudo apt-get install hardinfo
+hardinfo
+--driver check
+apt-cache search nvidia | grep -P '^nvidia-(driver-)?[0-9]+\s'
+
+
+--cuda10.2 install
+https://qiita.com/magicpot73/items/de4d921c23d1761ee3a0
+https://developer.nvidia.com/cuda-10.2-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=deblocal
+cd /usr/local
+https://sh-tsang.medium.com/tutorial-cuda-v10-2-cudnn-v7-6-5-installation-ubuntu-18-04-3d24c157473f
+#https://partners-intl.aliyun.com/help/doc-detail/109111.htm
+#https://github.com/mingyen066/Cuda-PyTorch-Installation-Guide
+#https://forums.developer.nvidia.com/t/cuda-10-2-installation-problems-on-ubuntu-18-04/119096
+apt autoremove --purge cuda-11.3
+
+apt autoremove --purge cuda-*
+/usr/local/cuda/bin/uninstall_cuda_10.2.pl
+rm -rf /usr/local/cuda-10.2
+
+#https://gist.github.com/tzvsi/222b3b22a847004a729744f89fe31255
+https://www.programmersought.com/article/81157676284/
+--libcudnn7_7.6.5.32-1+cuda10.2_amd64.deb
+http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/
+https://anaconda.org/anaconda/cudnn/files?sort=basename&version=7.6.5&sort_order=desc
+https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#abstract
+
+wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/libcudnn7_7.6.5.32-1+cuda10.2_amd64.deb
+sudo dpkg -i libcudnn7_7.6.5.32-1+cuda10.2_amd64.deb
+wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/libcudnn7-dev_7.6.5.32-1+cuda10.2_amd64.deb
+sudo dpkg -i libcudnn7-dev_7.6.5.32-1+cuda10.2_amd64.deb
+wget https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/7.6.5.32/Production/10.2_20191118/Ubuntu18_04-x64/libcudnn7-doc_7.6.5.32-1%2Bcuda10.2_amd64.deb?-hQjkUBlJHW1ut23ya4l4mXe1E-6A5ifqKmk0eXlC_UMsZtzMpIlqLhgkyHrXzudZ9o44EtNariWLKuakE5dBQXpBv-cPoGYi9YlrtgUkOZtyBlF2bYLkuE-jN29mBeBwIDNBuwIfRVnE3LAsMDZkx_9ubUz9Xh1UotGOKBNMvrxHgUfATA3eZfwTBIBgDCmAItGaUqSJ7Aw8XmaaEuaaADsURqj54ZE2_wNTzmGghdXmNqeDL2veHeoPT08E0bj9Vytxg
+sudo dpkg -i libcudnn7-doc_7.6.5.32-1+cuda10.2_amd64.deb
+
+
+https://programmerstart.com/article/7392674646/
+--bash scripts/build_tensorflow.sh
+
+
+http://erpcomputing.com/build-tensorflow-from-source--mkl-enabled
+Do you wish to build TensorFlow with OpenCL SYCL support? [y/N]: n
+
+-- making mapping_external
+mkdir mapping_external
+cd mapping_external
+mkdir linux
+
+--Could NOT find GFlags (missing: GFLAGS_INCLUDE_DIR GFLAGS_LIBRARY) 
+sudo apt-get install libgflags-dev
+--Imported targets not available for Boost version 106501
+sudo apt-get install libboost-all-dev
+sudo apt remove --purge cmake
+hash -r
+sudo rm /usr/local/bin/cmake
+sudo apt-get -y install cmake
+sudo ln -s /usr/bin/cmake /usr/local/bin
+/root/.cache/bazel/_bazel_root/eb067d0d22129024369669487b852114/external/eigen_archive
+--   Could not find GLEW
+sudo apt install libglew-dev
+--Could not find a package configuration file provided by "Pangolin" with any
+git submodule add -f https://github.com/stevenlovegrove/Pangolin.git Pangolin
+bash scripts/build_pangolin.sh
+
+--CMake Error at /SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/cmake/Modules/FindEigen3.cmake:21 (file):
+  file failed to open for reading (No such file or directory):
+realpath <file name>
+set (EIGEN3_INCLUDE_DIR "/root/.cache/bazel/_bazel_root/efb88f6336d9c4a18216fb94287b8d97/external/eigen_archive")
+
+--Could NOT find PythonLibs (missing: PYTHON_INCLUDE_DIRS) (Required is at least version "3.6")
+sudo apt-get install dpkg-dev binutils libx11-dev libxpm-dev libxft-dev libxext-dev
+
+sudo apt-get install gfortran libssl-dev libpcre3-dev \
+xlibmesa-glu-dev libglew1.5-dev libftgl-dev libmysqlclient-dev \
+libfftw3-dev libcfitsio-dev graphviz-dev \
+libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev \
+libkrb5-dev libgsl0-dev libqt4-dev
+
+
+--/root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/build/proto_codec/devices/camera.pb.cc:4:10: fatal error: devices/camera.pb.h: No such file or directory
+ include "devices/camera.pb.h"  into  include "camera.pb.h"
+
+--/root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/modules/base/io/img.h:49:10: fatal error: devices/camera.pb.h
+ include "devices/camera.pb.h"  into  include "../../../build/proto_codec/devices/camera.pb.h"	
+
+-- fatal error: glog/logging.h: No such file or directory #include "glog/logging.h"
+sudo apt install libgoogle-glog-dev
+
+--/root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/modules/base/io/img.h:218:29: error: ‘MatrixX’
+cd /usr/include
+please mv eigen3 aaaeigen3
+
+sudo apt-get install libtiff 
+mkdir -p build && cd build && cmake .. && make -j8
+
+https://jonnoftw.github.io/2018/04/04/building-tensorflow-with-opencl-support-on-ubuntu-1604
+https://medium.com/analytics-vidhya/building-tensorflow-2-0-with-gpu-support-and-tensorrt-on-ubuntu-18-04-lts-part-2-ff2b1482c0a3
+
+####################################################
+
+--data directory
+mkdir log cd log
+mkdir models cd models
+mkdir coco cd coco
+mkdir mrcnn_tmp cd mrcnn_tmp
+
+--/data/
+https://vision.in.tum.de/data/datasets/rgbd-dataset/download
+fr1/xyz  download
+mkdir tum && cd tum
+tar -xzvf rgbd_dataset_freiburg1_xyz.tgz -C tum/
+tar -xzvf rgbd_dataset_freiburg1_xyz.tgz
+
+--./simple_mrcnn_infer
+~/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/build/bin # ./simple_mrcnn_infer
+
+--Mask RCNN
+https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46
+pip3 install mrcnn --user
+
+--please see 
+https://github.com/yiakwy/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY
+https://github.com/yiakwy/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/blob/master/CHANGELOG.md
+https://github.com/yiakwy/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/commit/495e0a907a4c478c63141fd587252906398f4423
+
+1. add c++ mrcnn inference codes 
+2. update building scripts 
+3. update pysvso to export keras models in forms of tf pb graph or saved model format
+
+https://blog.metaflow.fr/tensorflow-how-to-freeze-a-model-and-serve-it-with-a-python-api-d4f3596b3adc
+https://stackabuse.com/installing-tensorflow-on-windows/
+https://medium.com/@teavanist/install-tensorflow-cpu-on-windows-10-4acbec6a71b7
+python --version
+pip --version
+python -m pip install --upgrade pip
+python -m pip install tensorflow==2.2.0
+
+export PATH=/root/anaconda3/bin:$PATH
+source activate py36
+
+~/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/python/pysvso/models # 
+--sudo nano __init__.py
+from .vgg16 import *
+into 
+from sfe import *
+from vgg16 import *
+add_path(os.path.join(pwd, '../../', 'pysvso'))
+
+
+--sudo nano sfe.py
+from pysvso.lib.log import LoggerAdaptor
+into from lib.log import LoggerAdaptor
+
+sfe_config = SFEConfig("pysvso.models.settings")
+into sfe_config = SFEConfig("models.settings")
+
+please change if __name__ == "__main__":
+into if __name__ != "__main__":
+
+Program(None)
+
+def Program(raw_args=None, format='StaticGraph'):
+--if not  is_tf_1():
+--if is_tf_1():
+
+def Program(raw_args=None, format='SavedModel'):
+def export_mrcnn_tf_graph(mrcnn, export_path):
+    save_mrcnn_to_serving(mrcnn.keras_model, export_path)
+
+python __init__.py
+
+~/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/Mask_RCNN/mrcnn # sudo nano model.py
+
+tf.log() -> tf.math.log()
+tf.sets.set_intersection() -> tf.sets.intersection()
+tf.sparse_tensor_to_dense() -> tf.sparse.to_dense()
+tf.to_float() -> tf.cast([value], tf.float32)
+
+please change def log2_graph(x):
+    return tf.log(x) / tf.log(2.0)
+into return tf.math.log(x) / tf.math.log(2.0)
+
+please change def refine_detections_graph(rois, probs, deltas, window, config):
+keep = tf.sets.set_intersection(tf.expand_dims(keep, 0),
+into         keep = tf.sets.intersection(tf.expand_dims(keep, 0),
+keep = tf.sparse_tensor_to_dense(keep)[0]
+into         keep = tf.sparse.to_dense(keep)[0]     
+keep = tf.sets.set_intersection(tf.expand_d$tf.expand_d$
+into         keep = tf.sets.intersection(tf.expand_d$tf.expand_d$ 
+keep = tf.sparse_tensor_to_dense(keep)[0]
+into         keep = tf.sparse.to_dense(keep)[0]
+tf.to_float(tf.gather(class_ids, keep))[..., tf.newaxis],
+tf.cast(tf.gather(class_ids, keep), tf.float32)[..., tf.newaxis],
+
+
+# tf.train.write_graph(frozen_graph, os.path.join(sfe_config.MODEL_PATH, "coco/mrcnn_tmp"), "mrcnn_tmp.pb", as_text=False)
+
+https://stackoverflow.com/questions/45466020/how-to-export-keras-h5-to-tensorflow-pb
+https://blog.metaflow.fr/tensorflow-how-to-freeze-a-model-and-serve-it-with-a-python-api-d4f3596b3adc
+
+##############################################################
+###########view###############################################
+bash scripts/build_pangolin.sh
+cd build
+cmake --build . --target pangolin_doc
+make
+sudo make install
+../Pangolin/external/git clone git clone https://github.com/pybind/pybind11.git
+
+--error: ‘numeric_limits’ is not a member of ‘std’ std::numeric_limits<float>::quiet_NaN() 
+please insert in admin:///root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/Pangolin/include/pangolin/gl/colour.h
+#include <limits>
+--/github.com/Pangolin/src/CMakeLists.txt
+set (EIGEN_INCLUDE_DIR "/root/.cache/bazel/_bazel_root/eb067d0d22129024369669487b852114/external/eigen_archive")
+
+please change  find_package(Eigen QUIET)
+ 		  if(EIGEN_FOUND)
+into   find_package(Eigen3 QUIET)
+  	  if(EIGEN3_FOUND)
+please check 
+--/Pangolin/pyexamples/python SimpleDisplay.py
+#################################################################
+#################################################################
+////////////////////////////////////////////////////
+/python/pysvso/graphics/__init__.py
+import sys
+import os
+import logging
+logging.basicConfig(level=logging.INFO)
+
+try:
+    add_path
+except:
+    def add_path(path):
+        path = os.path.abspath(path)
+        if path not in sys.path:
+            logging.info("loading path %s ..." % path)
+            sys.path.insert(0, path)
+        else:
+            logging.info("path %s exists!" % path)
+
+pwd = os.path.dirname(os.path.realpath(__file__))
+add_path(pwd)
+
+## Add Config to Python Path
+add_path(os.path.join(pwd, '..', 'lib'))
+add_path(os.path.join(pwd, '..', 'config'))
+add_path(os.path.join(pwd, '../../', 'pysvso'))
+add_path(os.path.join(pwd, '..', 'py_pose_graph'))
+
+
+## Import models
+from viewer import *
+///////////////////////////////////////////
+--/python/pysvso/graphics/viewer.py
+from py_pose_graph.point3d import Point3D
+from lib.log import LoggerAdaptor, init_logging
+
+--/python/system_tracker/__init__.py
+add_path(os.path.join(pwd, '../../', 'pysvso'))
+
+from system import * 
+
+--error:config.config.ImproperlyConfigured
+python/pysvso/optimizers/bundle_adjust.py
+optimizer_config = OptimizerConfig("pysvso.optimizers.settings")
+

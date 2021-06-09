@@ -1,0 +1,33 @@
+--python2.7 remove
+sudo apt purge python2.7-minimal
+
+--conda reboot
+https://github.com/conda/conda/issues/7980
+
+--remove conda
+conda remove -n py36 --all
+--remove anaconda
+https://docs.anaconda.com/anaconda/install/uninstall/
+conda install anaconda-clean
+anaconda-clean --yes
+
+https://linuxize.com/post/how-to-install-anaconda-on-ubuntu-18-04/
+
+
+--18.5 server
+https://help.ubuntu.com/community/Installation/MinimalCD
+
+sudo apt-get install nodejs
+sudo apt install python-pip
+#sudo apt install python3-pip
+
+--python 3.6
+https://phoenixnap.com/kb/how-to-install-python-3-ubuntu
+
+--tensorflow-gpu
+https://files.pythonhosted.org/packages/31/bf/c28971266ca854a64f4b26f07c4112ddd61f30b4d1f18108b954a746f8ea/tensorflow_gpu-2.2.0-cp36-cp36m-manylinux2010_x86_64.whl
+
+######python image process
+https://www.southampton.ac.uk/~feeg1001/notebooks/Matplotlib.html
+
+

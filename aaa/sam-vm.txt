@@ -1,0 +1,1039 @@
+https://github.com/yiakwy/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY
+
+--root install
+sudo -i
+
+ps aux | grep -i apt
+sudo kill -9 ###
+
+mv phantomjs-2.1.1-linux-x86_64 /usr/local/share/
+sudo ln -sf /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin
+phantomjs --version
+sudo apt-get install dos2unix
+sudo apt-get install nodejs
+sudo apt install python-pip
+#sudo apt install python3-pip
+pip install scikit-build
+pip3 install opencv-python
+pip install cmake
+
+dos2unix scripts/install.sh
+--bash scripts/install.sh
+
+cd /tmp
+curl -O https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+sha256sum Anaconda3-5.2.0-Linux-x86_64.sh
+bash Anaconda3-5.2.0-Linux-x86_64.sh
+
+source ~/.bashrc
+export PATH=/root/anaconda3/bin:$PATH
+conda create --name py36 python=3.6
+source activate py36
+source deactivate
+conda activate py36
+
+cd ~/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com
+git submodule add -f https://github.com/waleedka/coco.git
+cd /coco/common/maskApi.c
+sudo nano maskApi.c
+please insert { } into "for"
+
+--Could NOT find CURL (missing: CURL_LIBRARY CURL_INCLUDE_DIR)
+sudo apt-get install libcurl4-openssl-dev
+sudo apt install build-essential
+sudo apt-get install cmake
+
+
+pip install tensorflow_gpu-2.2.0-cp36-cp36m-manylinux2010_x86_64.whl
+--/python/requirements.txt
+#tensorflow-gpu==2.2.0
+22 line: protobuf=3.8.0
+
+dos2unix  scripts/init_python.sh
+dos2unix scripts/utils.sh
+--bash scripts/init_python.sh
+
+--error Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-WeaJeP/opencv-python/
+sudo apt install python3-pip
+sudo python3 -m pip install -U pip
+sudo python3 -m pip install -U setuptools
+
+--error sys.stderr.write(f"ERROR: {exc}")
+curl -fsSL -o- https://bootstrap.pypa.io/pip/3.5/get-pip.py | python3.5
+
+
+--error ImportError: No module named Cython.Build
+python -m pip install --upgrade pip
+pip install --upgrade cython
+
+--error ERROR: Package 'imageio' requires a different Python: 2.7.17 not in '>=3.5'
+sudo rm -rf python
+sudo ln -s /usr/bin/python3 /usr/bin/python
+
+
+--please change into scripts/thirdparties/linux/deb/apt/install_opencv.sh
+opencv4_pkg_source="file:///root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/opencv-4.2.0.tar.gz"
+opencv4_contrib_source="file:///root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/opencv_contrib-4.2.0.tar.gz"
+
+dos2unix scripts/thirdparties/linux/deb/apt/install_opencv.sh
+--bash scripts/thirdparties/linux/deb/apt/install_opencv.sh
+
+--E: The repository 'http://ppa.launchpad.net/bzindovic/suitesparse-bugfix-1319687/ubuntu bionic Release' does not have a Release file.
+https://askubuntu.com/questions/1054252/the-repository-http-ppa-launchpad-net-armagetronad-dev-ppa-ubuntu-bionic-rele
+sudo apt-add-repository -r ppa:bzindovic/suitesparse-bugfix-1319687
+sudo apt update -q
+
+--could NOT find Flake8 (missing: FLAKE8_EXECUTABLE)
+
+-- Could NOT find JNI (missing: JAVA_AWT_LIBRARY JAVA_JVM_LIBRARY JAVA_INCLUDE_PATH JAVA_INCLUDE_PATH2 JAVA_AWT_INCLUDE_PATH)
+--VTK is not found
+--   No package 'libavcodec' found
+--   No package 'libavformat' found
+--   No package 'libavutil' found
+--   No package 'libswscale' found
+--   No package 'gstreamer-base-1.0' found
+--   No package 'gstreamer-app-1.0' found
+--   No package 'gstreamer-riff-1.0' found
+--   No package 'gstreamer-pbutils-1.0' found
+--   No package 'libdc1394-2' found
+--  Failed to find gflags -set GFLAGS_INCLUDE_DIR
+--  Failed to find glog -  set GLOG_INCLUDE_DIR
+--   No package 'tesseract' found
+-- Performing Test HAVE_CXX_WNO_UNUSED_PRIVATE_FIELD - Failed
+-- OpenCL samples are skipped: OpenCL SDK is required
+
+sudo apt update
+apt --fix-broken install
+sudo apt install python-pip
+sudo apt-get install dpkg
+wget http://launchpadlibrarian.net/364831898/libavutil-dev_2.8.14-0ubuntu0.16.04.1_amd64.deb && sudo dpkg -i libavutil-dev_2.8.14-0ubuntu0.16.04.1_amd64.deb
+sudo apt-get install libavcodec-dev
+sudo apt-get install libavformat-dev
+sudo apt-get install libgflags-dev
+sudo apt-get install libswscale-dev
+sudo apt-get install libgstreamer-plugins-base1.0-dev
+#sudo apt-get install gstreamer1.0-plugins-good
+#sudo apt install libgstreamer1.0-dev
+sudo apt-get install libjemalloc-dev=3.6.0-11
+sudo apt install liblept5
+sudo apt install leptonica-progs
+sudo apt install libleptonica-dev
+sudo apt-get install libdc1394-22-dev
+sudo apt-get install libtesseract-dev
+sudo apt -y install freeglut3-dev
+sudo apt-get install libgtk-3-dev
+sudo apt install libavresample-dev
+sudo apt install libtiff-dev
+sudo apt install jasper
+sudo apt install libjava3d-jni
+sudo apt install libjna-jni
+sudo apt install flake8
+sudo apt-get install libhdf5-dev
+sudo apt-get install libglfw3-dev
+sudo apt-get install python-dev
+sudo apt-get install python-numpy
+sudo apt-get install libtbb2 
+sudo apt-get install libtbb-dev
+sudo apt install libopenblas-dev
+sudo apt install libopenblas-base
+sudo apt-get install libssl-dev
+sudo apt-get install libcurl4-openssl-dev
+sudo apt-get install libboost-all-dev
+sudo apt install doxygen
+sudo apt install graphviz
+sudo apt install ffmpeg  
+sudo apt install libavutil-dev
+sudo apt install libavdevice-dev
+sudo apt install wayland-protocols
+
+--E: The repository 'http://ppa.launchpad.net/bzindovic/suitesparse-bugfix-1319687/ubuntu bionic Release' does not have a Release file.
+sudo apt-add-repository -r ppa:armagetronad-dev/ppa
+sudo apt update -q
+
+--OpenBLAS error
+/root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/opencv/cmake/OpenCVFindOpenBLAS.cmake
+realpath file name
+please insert the below:
+Open_BLAS_INCLUDE_SEARCH_PATHS path: /usr/include/x86_64-linux-gnu
+Open_BLAS_LIB_SEARCH_PATHS path: /usr/lib/x86_64-linux-gnu
+
+
+ln -s /usr/local/lib/python3.6/site-packages/cv2/python-3.6  /root/anaconda3/envs/py36/lib/python3.6/site-packages/cv2/
+cd /root/anaconda3/envs/py36/lib/python3.6/site-packages/cv2/python-3.6
+mv cv2.cpython-36m-x86_64-linux-gnu.so cv2.so
+
+--/home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/cmake/pybind11/.appveyor.yml
+    Start-FileDownload 'http://bitbucket.org/eigen/eigen/get/3.3.9.zip'
+--/home/aaa/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/cmake/pybind11/.travis.yml
+    wget -q -O eigen.tar.gz https://bitbucket.org/eigen/eigen/get/3.3.9.tar.gz
+
+
+please change scripts/install_protoc.sh 
+VERSION="3.8.0"
+dos2unix scripts/install_protoc.sh
+bash scripts/install_protoc.sh
+
+######please run before changing eigen3 path
+
+dos2unix scripts/build_ceres.sh
+--bash scripts/build_ceres.sh
+-------------------------------------------
+--Cannot generate a safe runtime search path for target pangolin because files in some directories may conflict with libraries in implicit directories:
+https://github.com/stevenlovegrove/Pangolin/issues/488
+Download zlib 1.2.9.
+tar -xvf ~/Downloads/zlib-1.2.9.tar.gz
+cd zlib-1.2.9
+sudo -s
+./configure; make; make install
+cp /usr/local/lib/libz.a /root/anaconda3/lib/
+cp /usr/local/lib/libz.so.1.2.9 /root/anaconda3/lib/
+
+../Pangolin/external/ git clone https://github.com/pybind/pybind11.git
+
+dos2unix scripts/build_pangolin.sh
+dos2unix scripts/utils.sh
+bash scripts/build_pangolin.sh
+cd vendors/github.com/Pangolin
+cd build
+cmake --build . --target pangolin_doc
+make
+sudo make install
+
+sudo apt install libgl1-mesa-dev
+pip install pybind11
+
+--pybind11 install
+https://pybind11.readthedocs.io/en/stable/installing.html
+sudo python -mpip install  pybind11
+
+--error: ‘numeric_limits’ is not a member of ‘std’ std::numeric_limits<float>::quiet_NaN() 
+please insert in admin:///root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/Pangolin/include/pangolin/gl/colour.h
+#include <limits>
+
+--/github.com/Pangolin/src/CMakeLists.txt
+please insert in front part
+set (EIGEN_INCLUDE_DIR "/root/.cache/bazel/_bazel_root/eb067d0d22129024369669487b852114/external/eigen_archive")
+
+please change  find_package(Eigen QUIET)
+ 		  if(EIGEN_FOUND)
+into   find_package(Eigen3 QUIET)
+  	  if(EIGEN3_FOUND)
+--/Pangolin/pyexamples/python SimpleDisplay.py
+
+rename pypangolin.cpython-36m-x86_64-linux-gnu.so 
+pypangolin.so
+--------------------------------------------
+dos2unix scripts/build_g2o.sh
+bash scripts/build_g2o.sh 
+--Could NOT find QGLViewer (missing: QGLVIEWER_INCLUDE_DIR QGLVIEWER_LIBRARY)
+sudo apt-get install  libsuitesparse-dev
+sudo apt-get install  qtdeclarative5-dev
+sudo apt-get install   qt5-qmake
+sudo apt-get install  libqglviewer-dev-qt5
+
+sudo apt install libeigen3-dev
+sudo apt install qt5-qmake
+-libQGLViewer 
+https://charlieleee.github.io/post/ba-issue/
+http://libqglviewer.com/installUnix.html#linux
+http://libqglviewer.com/src/libQGLViewer-2.7.2.tar.gz
+http://libqglviewer.com/src/libQGLViewer-2.7.0.tar.gz
+tar -xzf libQGLViewer-2.7.2.tar.gz
+cd libQGLViewer-2.7.2/QGLViewer
+qmake (see options below)
+make
+sudo make install [optional]
+
+
+--No module named 'g2o'
+https://stackoverflow.com/questions/52747902/python-import-successful-in-one-terminal-but-fails-in-another
+sudo nano ~./bashrc
+export PYTHONPATH=$PYTHONPATH:/opt/lampp/htdocs/slam/SEMANTIC_SUPPORTED_ODEMETRY/vendors/github.com/g2o
+
+at first build g2opy
+
+dos2unix scripts/build_g2opy.sh
+bash scripts/build_g2opy.sh
+
+
+--bash scripts/build_tensorflow.sh
+
+please change scripts/build_tensorflow.sh
+/tensorflow_cc/tensorflow_cc
+rm -r build
+/tensorflow_cc/Dockerfiles/BAZEL_VERSION
+2.0.0
+/tensorflow_cc/Dockerfiles/archlinux-cuda
+cuda>=10.2
+/tensorflow_cc/tensorflow_cc/PROJECT_VERSION
+2.2.0-rc0
+
+# for one GB of swap
+dd if=/dev/zero of=tmpswap bs=1024 count=1M
+mkswap tmpswap
+swapon tmpswap
+exit exit
+
+-- making mapping_external
+mkdir mapping_external
+cd mapping_external
+mkdir linux
+
+--CMake Error at /SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/cmake/Modules/FindEigen3.cmake:21 (file):
+set (EIGEN3_INCLUDE_DIR "/root/.cache/bazel/_bazel_root/eb067d0d22129024369669487b852114/external/eigen_archive")
+
+--build
+mkdir build
+cd build
+cmake ..
+
+-- Could NOT find Glog (missing: GLOG_INCLUDE_DIR GLOG_LIBRARY) 
+ sudo apt-get install libgflags-dev
+ sudo apt install libgoogle-glog-dev
+ sudo apt-get install protobuf-compiler 
+ sudo apt-get install libprotobuf-dev
+
+-- Could NOT find GTest (missing: GTEST_LIBRARY GTEST_INCLUDE_DIR GTEST_MAIN_LIBRARY)
+sudo apt-get install libgtest-dev
+cd /usr/src/gtest
+sudo cmake CMakeLists.txt
+sudo make
+sudo cp ./libgtest*.a /usr/lib
+
+--Could NOT find PythonLibs (missing: PYTHON_INCLUDE_DIRS) (Required is at least version "3.6")
+sudo apt-get install git dpkg-dev cmake g++ gcc binutils libx11-dev \
+libxpm-dev libxft-dev libxext-dev
+sudo apt-get install python3-dev python3-pip python3-tk python3-lxml python3-six
+
+--make
+make -j8
+
+--error No rule to make target '/usr/lib/libpython3.6m.so.1.0', needed by 'lib/libmodels.so'.
+export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+sudo ldconfig /usr/lib/x86_64-linux-gnu
+
+--error cc1plus: warning: unrecognized command line option ‘-Wno-deprecated-declaration’
+dd if=/dev/zero of=tmpswap bs=1024 count=1M
+mkswap tmpswap
+swapon tmpswap
+
+if delete swap file
+swapoff tmpswap (swapfile)
+rm tmpswap
+
+
+--/root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/build/proto_codec/devices/camera.pb.cc:4:10: fatal error: devices/camera.pb.h: No such file or directory
+ include "devices/camera.pb.h"  into  include "camera.pb.h"
+--/root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/modules/base/io/img.h:49:10: fatal error: devices/camera.pb.h
+ include "devices/camera.pb.h"  into  include "../../../build/proto_codec/devices/camera.pb.h"	
+-- fatal error: glog/logging.h: No such file or directory #include "glog/logging.h"
+sudo apt install libgoogle-glog-dev
+
+--/root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/modules/base/io/img.h:218:29: error: ‘MatrixX’
+cd /usr/include
+mv eigen3 aaaeigen3
+
+--log directory
+mkdir log cd log
+mkdir models cd models
+mkdir coco cd coco
+mkdir mrcnn_tmp cd mrcnn_tmp
+
+--/data/
+https://vision.in.tum.de/data/datasets/rgbd-dataset/download
+fr1/xyz  download
+https://vision.in.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_xyz.tgz
+mkdir tum && cd tum
+tar -xzvf rgbd_dataset_freiburg1_xyz.tgz -C tum/
+tar -xzvf rgbd_dataset_freiburg1_xyz.tgz
+
+--./simple_mrcnn_infer
+~/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/build/bin # ./simple_mrcnn_infer
+
+~/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/Mask_RCNN/mrcnn # sudo nano model.py
+
+tf.log() -> tf.math.log()
+tf.sets.set_intersection() -> tf.sets.intersection()
+tf.sparse_tensor_to_dense() -> tf.sparse.to_dense()
+tf.to_float() -> tf.cast([value], tf.float32)
+
+please change def log2_graph(x):
+    return tf.log(x) / tf.log(2.0)
+into return tf.math.log(x) / tf.math.log(2.0)
+
+please change def refine_detections_graph(rois, probs, deltas, window, config):
+keep = tf.sets.set_intersection(tf.expand_dims(keep, 0),
+into         keep = tf.sets.intersection(tf.expand_dims(keep, 0),
+keep = tf.sparse_tensor_to_dense(keep)[0]
+into         keep = tf.sparse.to_dense(keep)[0]     
+keep = tf.sets.set_intersection(tf.expand_d$tf.expand_d$
+into         keep = tf.sets.intersection(tf.expand_d$tf.expand_d$ 
+keep = tf.sparse_tensor_to_dense(keep)[0]
+into         keep = tf.sparse.to_dense(keep)[0]
+tf.to_float(tf.gather(class_ids, keep))[..., tf.newaxis],
+tf.cast(tf.gather(class_ids, keep), tf.float32)[..., tf.newaxis],
+
+-------------------------------------------------------------
+~/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/python/pysvso/models # 
+--sudo nano __init__.py
+add_path(os.path.join(pwd, '../../', 'pysvso'))
+
+from .vgg16 import *
+into 
+from sfe import *
+from vgg16 import *
+
+
+
+--sudo nano sfe.py
+from pysvso.lib.log import LoggerAdaptor
+into from lib.log import LoggerAdaptor
+
+sfe_config = SFEConfig("pysvso.models.settings")
+into sfe_config = SFEConfig("models.settings")
+
+please change if __name__ == "__main__":
+into if __name__ != "__main__":
+
+Program(None)
+
+def Program(raw_args=None, format='StaticGraph'):
+--if not  is_tf_1():
+--if is_tf_1():
+
+def Program(raw_args=None, format='SavedModel'):
+def export_mrcnn_tf_graph(mrcnn, export_path):
+    save_mrcnn_to_serving(mrcnn.keras_model, export_path)
+
+python __init__.py
+------------------------------------------------------------
+/python/pysvso/graphics/__init__.py
+import sys
+import os
+import logging
+logging.basicConfig(level=logging.INFO)
+
+try:
+    add_path
+except:
+    def add_path(path):
+        path = os.path.abspath(path)
+        if path not in sys.path:
+            logging.info("loading path %s ..." % path)
+            sys.path.insert(0, path)
+        else:
+            logging.info("path %s exists!" % path)
+
+pwd = os.path.dirname(os.path.realpath(__file__))
+add_path(pwd)
+
+## Add Config to Python Path
+add_path(os.path.join(pwd, '..', 'lib'))
+add_path(os.path.join(pwd, '..', 'config'))
+add_path(os.path.join(pwd, '../../', 'pysvso'))
+add_path(os.path.join(pwd, '..', 'py_pose_graph'))
+add_path(os.path.join(pwd, '../../../', 'vendors/github.com/Pangolin/build/src'))
+
+
+## Import models
+from viewer import *
+
+--/python/pysvso/graphics/viewer.py
+from py_pose_graph.point3d import Point3D
+from lib.log import LoggerAdaptor, init_logging
+
+please change import pangolin
+into import pypangolin as pangolin
+
+--/python/pysvso/system_tracker/__init__.py
+add_path(os.path.join(pwd, '../../', 'pysvso'))
+add_path(os.path.join(pwd, '../../../', 'vendors/github.com/Pangolin/build/src'))
+
+from system import * 
+
+--error
+delete prefex "pysvso" in system_tracker/system.py
+delete prefex "pysvso" in system_tracker/tracker.py
+delete "pysvso" in py_pose_graph/mapblock
+delete "pysvso" in py_pose_graph/frame.py
+delete "pysvso" in predictors/ekf.py
+delete "pysvso" in predictors/opticalflow.py
+delete "pysvso" in optimizers/bundle_adjust.py
+delete "pysvso" in lib/visualizer.py
+delete "pysvso" in mapping/local_mapping.py
+delete "pysvso" in mapping/relocalization.py
+
+cd pysvso/system_tracker
+python __init__.py
+
+--error:config.config.ImproperlyConfigured
+python/pysvso/optimizers/bundle_adjust.py
+optimizer_config = OptimizerConfig("pysvso.optimizers.settings")
+
+--error
+optimizers/settings
+G2OPYLIB_ROOT = os.path.abspath("/root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/g2opy/lib/")
+
+--pysvso/system_tracker/tracker.py
+please mask #import runtime_block_pb2 as runtime_block_proto
+
+--config setting at /pysvso/config
+
+--error No module named 'mrcnn'
+/pysvso/lib/setting.py
+MRCNN = os.path.abspath(os.path.join("/root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/vendors/github.com/Mask_RCNN"))
+
+--error pyflann
+https://stackoverflow.com/questions/58547506/no-module-named-index-after-install-pyflann
+pip install pyflann-py3
+
+--error tensorflow_graphics
+git clone https://github.com/tensorflow/graphics.git
+
+please change in the setup.py
+ #if compute_platform == 'cpu':
+ #  INSTALL_PACKAGES.append('tensorflow >= 1.13.1')
+ package_name = 'tensorflow-graphics'
+ #else:
+ #  INSTALL_PACKAGES.append('tensorflow-gpu >= 1.13.1')
+ #  package_name = 'tensorflow-graphics-gpu'
+
+sh build_pip_pkg.sh
+pip install --upgrade dist/*.whl
+
+pip install tensorflow-graphics
+pip install colabtools
+sudo apt-get install libopenexr-dev
+
+--NameError: name 'Pixel2D' is not defined
+/pysvso/models/sfe.py
+please change
+try:
+    from pysvso.py_pose_graph.frame import Pixel2D
+except:
+    pass
+into 
+#try:
+from py_pose_graph.frame import Pixel2D
+#except:
+#    pass
+
+--AttributeError: 'module' object has no attribute 'stdout'
+pip install --upgrade pip
+
+
+-----mp4 file viewer-------------------------
+sudo apt-get install h264enc
+------------------------------
+
+--TypeError: SetBounds(): incompatible function arguments
+in the /system_tracker/system.py
+please change panel.SetBounds(1.0, 1.0, 0.0, 100 / 640.)
+panel.SetBounds(pangolin.Attach(0.0), pangolin.Attach(1.0), pangolin.Attach(0), pangolin.Attach(1.0), 100 / 640.)
+
+###################################
+--result success
+-pysvso/models/sfe.py
+please change if __name__ != "__main__":
+into if __name__ == "__main__":
+
+-pysvso/config/global_settings.py
+
+import sys
+import os
+
+# program control
+DEBUG = True
+USE_POSE_GROUND_TRUTH = True
+
+# directories
+HDD = "/root"
+ROOT = "{hdd}".format(hdd=HDD)
+REPO = "SEMANTIC_VISUAL_SUPPORTED_ODEMETRY"
+PROJECT_ROOT = "{root}/{repo}".format(root=ROOT, repo=REPO)
+
+# video source
+DATASET_NAME = "rgbd_dataset_freiburg1_xyz"
+DATA_DIR = "{project_base}/data/tum/{dataset_name}".format(project_base=PROJECT_ROOT,
+
+# camera
+CAMERA_DEVICE="{project_base}/data/tum/camera1.yaml".format(project_base=PROJECT_ROOT)
+
+# damp destination
+VIDEO_DIR = "{project_base}/log/video".format(project_base=PROJECT_ROOT)
+OUTPUT = VIDEO_DIR
+SAVER = os.path.join(OUTPUT, "saver")
+VIDEO_NAME = "freiburg1_xyz.mp4"
+
+/pysvso/system_tracker/system.py
+please mask #block.load_device(Camera_device)
+please change if __name__ == "__main__":
+into if __name__ != "__main__":
+
+-please rename system_exc_JUN-2020-28_TUM_XYZ_DATASET
+into system_exc_JUN_2020_28_TUM_XYZ_DATASET
+/pysvso/system_tracker/system_exc_JUN_2020_28_TUM_XYZ_DATASET
+
+please mask #block.load_device("{project_base}/data/tum/camera1.yaml".format(project_base=Project_base))
+
+-/pysvso/system_tracker/python __init__.py
+please change in __init__.py
+from system import * 
+
+-/pysvso/system_tracker/python system_exc_JUN_2020_28_TUM_XYZ_DATASET
+please change in __init__.py
+from system_exc_JUN_2020_28_TUM_XYZ_DATASET import * 
+
+https://github.com/yiakwy/Onsite-Blackboard-Code-Interview/blob/master/apollo/cpp/src/modules/graph/graph.h
+
+################### get image ################
+system.py -- run()
+  tracker.track(frame, timestamp=timestamp)
+  please change into tracker.track(frame, cnt0, timestamp=timestamp)
+
+tracker.py -- tracker()
+  please change into def track(self, img, cnt0, timestamp=None):
+  isSucc = self._match(last_frame)
+  please change into isSucc = self._match(last_frame, cnt0)
+  match() 
+  please change into def _match(self, reference_frame, cnt0):
+     self._renderer.render(masked_img)
+     please change into self._renderer.render(masked_img, cnt0)
+pysvso.lib.visualizer.py -- render()
+  please change into def render(self, im, cnt0, mode=None):
+   please insert bellow part in the end part
+   plt.imsave("result.png", im.astype(np.uint8))
+--error
+tracker.py
+768, please change self._renderer.render(ref_masked_img)
+        into self._renderer.render(ref_masked_img, 0)  
+798 , please change self._renderer.render(masked_img)
+        inot self._renderer.render(masked_img, 0)
+
+--xampp download
+https://phoenixnap.com/kb/how-to-install-xampp-on-ubuntu
+https://ourcodeworld.com/articles/read/302/how-to-setup-a-virtual-host-locally-with-xampp-in-ubuntu
+sudo /opt/lampp/lampp start
+sudo /opt/lampp/lampp stop
+
+--php install
+apt install php7.2-cli
+apt install hhvm 
+
+--cp -r /root/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY /opt/lampp/htdocs/test
+
+--run bash file in php
+https://www.php.net/manual/en/function.shell-exec.php
+<form method="post" action="index.php">
+    <h3>Please click "run python" button :</h3>
+    <input type="submit" name="runpython" />
+</form>
+<?php
+   if($_POST["runpython"])
+   {
+      $temp = shell_exec("bash -c \"bash s.sh\"");
+      echo "result:" .$temp;
+   }
+?>
+
+
+--etc/profile setting.
+sudo /opt/lampp/lampp start
+export PATH=/root/anaconda3/bin:$PATH
+source activate py36
+
+-conda audo booting
+https://github.com/conda/conda/issues/7980
+cd /etc
+echo ". /root/anaconda3/etc/profile.d/conda.sh" >> ~/.bash_profile
+sudo ln -s /root/anaconda3/etc/profile.d/conda.sh /etc/profile.d/conda.sh
+conda activate py36
+echo "conda activate py36" >> ~/.bash_profile
+
+
+sudo ln -s /root/anaconda3/envs/py36/lib/python3.6/site-packages/cv2/python-3.6/cv2.so /opt/lampp/htdocs/test/SEMANTIC_VISUAL_SUPPORTED_ODEMETRY/python/pysvso/system_tracker/cv2.so
+
+--maplotlib  install
+python -m pip install -U pip
+python -m pip install -U matplotlib
+
+--Pangoline error fix(drawlines, drawpoint )
+https://github.com/uoip/pangolin/blob/master/python/contrib.hpp
+please insert Pangolin/src/python/pypangoln/gl_draw.cpp
+please change py into pybind11
+examples  
+  m.def("DrawLines", (void (*) (pybind11::array_t<double>, pybind11::array_t<double>, float)) &DrawLines,
+          pybind11::arg("points"), 
+          pybind11::arg("points2"), 
+          pybind11::arg("point_size") = 0);
+recommend method to https://github.com/stevenlovegrove/Pangolin/pull/600/commits/21cc2466b4061d1e65ca1d0ac2460e10eee184db
+-Lock error
+https://github.com/uoip/pangolin/blob/master/python/display/view.hpp
+please insert Pangolin/src/python/pypangoln/gl_draw.cpp/view.cpp
+    pybind11::enum_<pangolin::Lock>(m, "Lock")
+        .value("LockLeft", pangolin::LockLeft)
+        .value("LockBottom", pangolin::LockBottom)
+        .value("LockCenter", pangolin::LockCenter)
+        .value("LockRight", pangolin::LockRight)
+        .value("LockTop", pangolin::LockTop)
+        .export_values();
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% -main error(system break)
+%% # sudo apt  install libegl1-mesa-dev
+%% (this don't use absolutly)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+--how to put dictionary class in multiprocessing in python
+https://stackoverflow.com/questions/22468643/passing-a-dict-like-object-through-multiprocessing-queue-makes-it-unable-to-be-m
+class Attr(dict):
+    __slots__ = () # we don't need a __dict__
+
+    def __getattr__(self, name): # wrapper around dict.__setitem__, with an exception fix
+        try:
+            return self[name]
+        except KeyError:
+            raise AttributeError(name) from None # raise the right type of exception
+
+    def __delattr__(self, name): # wrapper around dict.__delitem__
+        try:
+            del self[name]
+        except KeyError:
+            raise AttributeError(name) from None # change exception type here too
+
+    __setattr__ = dict.__setitem__ # no special exception rewriting needed here
+    pass
+
+
+--how to make multi process in multiprocessing 
+https://stackoverflow.com/questions/36962462/terminate-a-python-multiprocessing-program-once-a-one-of-its-workers-meets-a-cer
+
+--image 3d draw  
+pysvso/mapping/relocalization.py
+#plt.show()
+lib/visualizer.py
+plt.show()
+
+--image draw pysvso/system_tracker/tracker.py
+self._renderer.render(masked_img)
+pool = ThreadingPool(4)
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+###############################################
+...........ORB_SLAM2
+--https://github.com/raulmur/ORB_SLAM2
+--ORB_SLAM2 version condition.
+https://www.programmersought.com/article/38096512050/
+
+--opencv download
+http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.4.11/opencv-2.4.11.zip
+https://sourceforge.net/projects/opencvlibrary/files/
+#https://github.com/opencv/opencv/archive/2.4.13.6.zip
+
+-install opencv-2.4.11 in ubuntu
+https://gist.github.com/SoonminHwang/e010ec8fd6de8a1c2c4d5d5ff854109b
+
+--how to enter root file manager in ubuntu16.04
+https://askubuntu.com/questions/422950/root-folder-access-via-gui
+gksu nautilus
+sudo -i nautilus
+
+--qt 4.x install
+sudo apt install qt4-default
+
+sudo apt install python-pip
+pip install --upgrade pip
+
+--Pangolin install
+https://github.com/stevenlovegrove/Pangolin
+
+--No module named typing
+https://stackoverflow.com/questions/65869296/installing-pip-is-not-working-in-python-3-6/65871131#65871131
+curl -O https://bootstrap.pypa.io/pip/2.7/get-pip.py
+python get-pip.py
+python -m pip install --upgrade
+
+sudo apt install doxygen
+
+--error Python.h: No such file or directory compilation terminated 
+export CPLUS_INCLUDE_PATH=/usr/include/python2.7
+
+--error: ‘numeric_limits’ is not a member of ‘std’ std::numeric_limits<float>::quiet_NaN() 
+please insert in admin:///Pangolin/include/pangolin/gl/colour.h
+#include <limits>
+
+--error #include <Eigen/Core>
+sudo apt-get install libeigen3-dev
+sudo ln -s /usr/include/eigen3/Eigen /usr/include/Eigen
+sudo ln -s /usr/include/eigen3/unsupported /usr/include/unsupported
+
+--error /usr/bin/ld: cannot find -lpython3.5m
+sudo apt install python3.5-dev
+
+--ImportError: dynamic module does not define init function (initpypangolin)
+python version: if using python2, it will happend.
+please usd python3 instead python
+
+--No module named 'OpenGL'
+sudo easy_install pyopengl
+sudo apt-get install python python-numpy python-opengl python-qt4 python-qt4-gl
+
+sudo apt install python3-pip
+pip3 install pyopengl
+
+--error /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:745:3: error: static assertion failed: 
+
+https://github.com/raulmur/ORB_SLAM2/issues/68
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% --when I install bollow, vmware system break
+%% sudo apt install libegl1-mesa-dev
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+--License /Thirdparty/DBoW2/License .txt
+if Monocular, please change.
+
+@article{murORB2,
+  title={{ORB-SLAM2}: an Open-Source {SLAM} System for Monocular, Stereo and {RGB-D} Cameras},
+  author={Mur-Artal, Ra\'ul and Tard\'os, Juan D.},
+  journal={IEEE Transactions on Robotics},
+  volume={33},
+  number={5},
+  pages={1255--1262},
+  doi = {10.1109/TRO.2017.2705103},
+  year={2017}
+ }
+
+--build
+cd ORB_SLAM2
+chmod +x build.sh
+./build.sh
+
+--run
+-Monocular
+./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/TUM1.yaml ./rgbd_dataset_freiburg1_rpy
+
+-RGB-D Example
+associate.py
+https://gist.github.com/matlabbe/484134a2d9da8ad425362c6669824798
+
+ -error
+ https://www.programmersought.com/article/8037654580/
+
+--change associate.py
+85     
+    first_keys = list(first_list.keys())
+    second_keys = list(second_list.keys())
+
+135
+            print("%s"%("rgb_sync/" + " ".join(first_list[a]).split("/")[1]))
+            print("%s"%("./rgbd_dataset_freiburg1_rpy/" + " ".join(first_list[a]).split("/")[1]))
+            shutil.move("./rgbd_dataset_freiburg1_rpy/" + " ".join(first_list[a]), "rgb_sync/" + " ".join(first_list[a]).split("/")[1])
+            shutil.move("./rgbd_dataset_freiburg1_rpy/" + " ".join(second_list[b]), "depth_sync/" + " ".join(second_list[b]).split("/")[1])
+--run
+python associate.py ./rgbd_dataset_freiburg1_rpy/rgb.txt ./rgbd_dataset_freiburg1_rpy/depth.txt > associations.txt
+
+./Examples/RGB-D/rgbd_tum Vocabulary/ORBvoc.txt Examples/RGB-D/TUM1.yaml ./rgbd_dataset_freiburg1_rpy associations.txt
+
+--ROS Examples
+-error /core/rosbuild/rosbuild.cmake
+#https://www.programmersought.com/article/77641448735/
+
+sudo apt-get install python-rosinstall
+-ros-indigo-libg2o_2014.2.18-0trusty-20190604-041722-0800_amd64.deb
+http://packages.ros.org/ros-shadow-fixed/ubuntu/pool/main/r/ros-indigo-libg2o/
+
+https://mirror.umd.edu/packages.ros.org/ros/ubuntu/pool/main/r/ros-indigo-libg2o/
+sudo apt-get install ros-indigo-libg2o ros-indigo-cv-bridge
+
+https://launchpad.net/ubuntu/+source/suitesparse/1:4.2.1-3ubuntu1/+build/5358760
+libcamd2.3.1
+libcholmod2.1.2
+libamd2.3.1
+
+https://launchpad.net/ubuntu/trusty/amd64
+sudo dpkg -i libopencv-contrib2.4_2.4.8+dfsg1-2ubuntu1_amd64.deb
+
+
+--error  APT::Update::Post-Invoke-Success 'if /usr/bin/test -w /var/cache/app-info -a -e /usr/bin/appstreamcli; then appstreamcli refresh > /dev/null; fi'
+E: Sub-process returned an error code
+
+sudo apt-get purge libappstream3
+
+--error Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+sudo apt-get update && sudo apt-get upgrade
+
+--Using Catkin-Tools:
+https://www.systutorials.com/docs/linux/man/1-catkin_tools/
+sudo pip install -U catkin_tools
+
+#########################################################
+another slam
+#########################################################
+--https://github.com/gaoxiang12/ORBSLAM2_with_pointcloud_map
+-error
+error: no matching function for call to ‘g2o::SE2::setRotation(Eigen::Rotation2D<double>::Scalar)
+https://github.com/gaoxiang12/ORBSLAM2_with_pointcloud_map/issues/3
+sudo apt-get install libxmu-dev libxi-dev
+
+-error
+Could NOT find CHOLMOD (missing: CHOLMOD_INCLUDE_DIR CHOLMOD_LIBRARIES) 
+
+sudo apt-get install libsuitesparse-dev
+
+-error
+Compiling with OpenGL support
+qmake: could not exec '/usr/lib/x86_64-linux-gnu/qt4/bin/qmake': No such file or directory
+
+sudo apt-get install  qt4-qmake
+
+--QtCore could not be found there.  Qt is NOT installed correctly for the target build environment.
+
+sudo apt-get install cmake gcc g++ qt{4,5}-qmake libqt4-dev
+
+--Could NOT find QGLVIEWER (missing:  QGLVIEWER_INCLUDE_DIR QGLVIEWER_LIBRARY)
+
+sudo apt-get install  libsuitesparse-dev
+sudo apt-get install  qtdeclarative5-dev
+sudo apt-get install   qt5-qmake
+#sudo apt-get install -y libqglviewer-dev-qt5
+sudo apt-get install -y libqglviewer-dev
+
+-error :static assertion failed: FLOATING_POINT_ARGUMENT_PASSED__INTEGER_WAS_EXPECTED
+     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert(X,#MSG);
+
+--eigen lib install
+sudo apt-get install libeigen3-dev
+sudo ln -s /usr/include/eigen3/Eigen /usr/include/Eigen
+sudo ln -s /usr/include/eigen3/unsupported /usr/include/unsupported
+
+--how to check eigen version
+pkg-config --modversion eigen3
+
+--eigen3 deb file download
+http://cz.archive.ubuntu.com/ubuntu/ubuntu/ubuntu/pool/universe/e/eigen3/
+
+
+--error: ‘MatrixExponential’ is not a member of ‘Eigen’
+   Eigen::MatrixExponential<DoubleSizedMatrixType> me(bigA);
+
+--eigen3 update
+https://stackoverflow.com/questions/49196806/how-to-change-version-of-eigen
+at first download
+INSTALL
+cd build     cmake ..     sudo make install
+
+--error :   By not providing "FindPCL.cmake" in CMAKE_MODULE_PATH this project has asked CMake to find a package configuration file provided by "PCL"
+
+#sudo apt install libpcl-dev
+
+--The imported target "vtk" references the file    "/usr/bin/vtk" but this file does not exist
+sudo update-alternatives --install /usr/bin/vtk vtk /usr/bin/vtk6 10
+
+--Could NOT find OpenNI2 (missing:  OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS)
+sudo apt-get install libopenni2-dev
+
+--fatal error: g2o/types/sim3/types_seven_dof_expmap.h: No such file or directory 
+in the go build
+cmake ..   make     sudo make install
+
+--Could NOT find PCL_APPS (missing:  PCL_APPS_LIBRARY)
+sudo apt-get install libpcl-apps1.7
+sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
+sudo apt-get update
+sudo apt-get install libpcl-all
+sudo apt-get install pcl-tools
+
+--std::auto_ptr<CloudViewer_impl> impl_;
+
+##########################################################https://github.com/ayushgaud/ORB_SLAM2
+
+--opencv3 and opencv-contrib3 install
+-download
+https://ftp.osuosl.org/pub/blfs/conglomeration/opencv/
+
+-install
+https://learnopencv.com/install-opencv3-on-ubuntu/
+https://learnopencv.com/install-opencv-3-4-4-on-ubuntu-16-04/
+
+--Could NOT find Atlas (missing: Atlas_CLAPACK_INCLUDE_DIR Atlas_CBLAS_LIBRARY Atlas_BLAS_LIBRARY)
+sudo apt-get install liblapacke-dev
+sudo apt-get install libatlas-base-dev
+
+--Could not find OpenBLAS lib. Turning OpenBLAS_FOUND off
+
+--The imported target "vtk" references the file "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+
+--The imported target "vtk" references the file "/usr/bin/vtk" but this file does not exist. Possible reasons include:
+
+sudo update-alternatives --install /usr/bin/vtk vtk /usr/bin/vtk6 10
+
+--The imported target "vtkRenderingPythonTkWidgets" references the file "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so",but this file does not exist.  Possible reasons include:
+
+sudo apt-get install python-vtk
+
+--opencv3.4.4 install
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=$cwd/installation/OpenCV-"$cvVersion" -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D WITH_TBB=ON -D WITH_V4L=ON -D OPENCV_PYTHON3_INSTALL_PATH=$cwd/OpenCV-$cvVersion-py3/lib/python3.5/site-packages -D WITH_QT=ON -D WITH_OPENGL=ON -D  OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -D BUILD_EXAMPLES=ON ..
+
+--opencv3.2.0 install
+https://www.programmersought.com/article/57624981988/
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_PYTHON_EXAMPLES=ON -D WITH_VTK=OFF -D BUILD_opencv_viz=OFF -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -D PYTHON_EXCUTABLE=/usr/bin/python -D WITH_TBB=ON -D WITH_GTK=ON -D BUILD_EXAMPLES=ON ..
+
+make -j4
+sudo make install
+sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
+sudo ldconfig
+
+--Could NOT find PythonLibs (missing:  PYTHON_LIBRARIES PYTHON_INCLUDE_DIRS) (Required is exact version "3.5.1")
+sudo apt-get install git dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev
+sudo apt-get install python3-dev python3-pip python3-tk python3-lxml python3-six
+
+-- Checking for module 'libavresample'
+--   No package 'libavresample' found
+-- Checking for module 'libgphoto2'
+--   No package 'libgphoto2' found
+
+
+-- Could not find OpenBLAS lib. Turning OpenBLAS_FOUND off
+-- Could NOT find JNI (missing:  JAVA_AWT_LIBRARY JAVA_JVM_LIBRARY JAVA_INCLUDE_PATH JAVA_INCLUDE_PATH2 JAVA_AWT_INCLUDE_PATH)
+-- Could NOT find Pylint (missing:  PYLINT_EXECUTABLE) 
+-- Could NOT find Flake8 (missing:  FLAKE8_EXECUTABLE) 
+-- VTK is not found. Please set -DVTK_DIR in CMake to VTK build directory, or to VTK install subdirectory with VTKConfig.cmake file
+-- Could NOT find HDF5 (missing:  HDF5_LIBRARIES HDF5_INCLUDE_DIRS) 
+GFLAGS_INCLUDE_DIR
+GLOG_INCLUDE_DIR
+
+--error: conversion from ‘cv::Mat’ to non-scalar type ‘IplImage {aka _IplImage}’ requested IplImage mask_ipl = mask;
+IplImage temp = cvIplImage(img);
+
+--error: no match for ‘operator=’ (operand types are ‘CvPoint’ and ‘cv::Point {aka cv::Point_<int>}’)  chain[0] = pt1;
+opencv_contrib/modules/rgbd/samples/linemode.cpp 232
+chain[0] = (cvPoint)(pt1.x, pt1.y);
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+--go to the console(in the vmware)
+alt + ctl + F1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+##########################################################
+https://github.com/ayushgaud/ORB_SLAM2
+--Could not find a package configuration file provided by "catkin" with any of the following names:  
+
+https://www.devmanuals.net/install/ubuntu/ubuntu-16-04-LTS-Xenial-Xerus/how-to-install-catkin.html
+dpkg -L catkin
+sudo apt-get install catkin
+
+sudo apt-get install -y python-empy python-catkin-pkg python-dev python-numpy python-yaml
+
+-- Could not find a package configuration file provided by "roscpp" with any of the following names:
+
+sudo apt install python-rosdep
+sudo rosdep init
+rosdep update
+rosdep install roscpp
+
+sudo apt-get install python-roscpp-msgs
+######################################################

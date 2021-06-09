@@ -1,0 +1,29 @@
+Simultaneous localization and mapping (SLAM) is the computational problem of constructing or updating a map of an unknown environment while.
+
+ORB-SLAM is a versatile and accurate SLAM solution for Monocular, Stereo and RGB-D cameras. It is able to compute in real-time the camera trajectory and a sparse 3D reconstruction of the scene in a wide variety of environments, ranging from small hand-held sequences of a desk to a car driven around several city blocks. It is able to close large loops and perform global relocalisation in real-time and from wide baselines. It includes an automatic and robust initialization from planar and non-planar scenes. 
+
+ORB-SLAM2 is a complete SLAM system for monocular, stereo and RGB-D cameras, including map reuse, loop closing and relocalization capabilities. The system works in real-time on standard CPUs in a wide variety of environments from small hand-held indoors sequences, to drones flying in industrial environments and cars driving around a city.
+
+Currently, there are four very good algorithms that can "compete" with each other: ORB-SLAM, LSD-SLAM, DSO (Direct Sparse Odometry), and SVO (Semi-direct Visual Odometry). Each of them addresses different characteristics: either feature-based or direct method, either dense or sparse reconstruction. Moreover, the first two are SLAM methods because they address the loop closure problem, whereas the last two are simply visual odometry algorithm. All of them are achieving impressive results with weaknesses and strenghts.
+
+Eigen is a C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms.
+
+
+SLAM link
+https://github.com/ayushgaud/ORB_SLAM2
+https://github.com/gaoxiang12/ORBSLAM2_with_pointcloud_map.git
+https://github.com/wf-hahaha/ORB_SLAM2
+https://github.com/castiel520/ORB_SLAM2-Semi-Dense
+https://github.com/ROBOTIS-JAPAN-GIT/turtlebot3_slam_3d
+--https://github.com/heethesh/SALSA-Semantic-Assisted-SLAM
+--https://habr.com/ru/post/373707/
+
+
+
+DSO link
+https://github.com/JakobEngel/dso
+
+
+SVO  link
+https://github.com/uzh-rpg/rpg_open_remode/wiki/Run-using-SVO
+

@@ -1,0 +1,47 @@
+Build price Oracle with landing page similar to:
+
+https://www.ftso.com/
+
+https://ftso.dev/
+
+https://www.ftso.uk/
+
+
+Use API from exchanges to retrieve prices such as:
+
+https://binance-docs.github.io/apidocs/spot/en/#change-log
+
+https://docs.bitfinex.com/docs/introduction
+
+https://www.bitstamp.net/api/
+
+https://developers.coinbase.com/
+
+/////////////3,11///////////////////////////
+https://handsontable.com/docs/7.3.0/demo-freezing.html
+3.15
+//////////////////////////////////////////
+https://codepen.io/mephysto/pen/pdyPVe
+///////////////////////////////////
+3.19
+https://training.bitrix24.com/rest_help/crm/leads/crm_lead_fields.php
+https://codesandbox.io/s/react-cropper-demo-forked-5jehf?file=/index.js:2635-2645
+https://merunasgrincalaitis.medium.com/create-an-art-marketplace-in-ethereum-with-erc-721-tokens-in-10-minutes-using-0xcert-f059fc951904
+https://0xcert.org/?utm_medium=post&utm_source=medium&utm_campaign=framework%20tutorial&utm_content=artmarket&utm_term=https%3A%2F%2F0xcert.org
+
+https://www.websitetooltester.com/en/blog/best-free-website-builders/
+
+
+
+//////////////////////3.23////////////////////
+https://www.fastpages.io/
+
+
+/////////////////////4.3//////////////////////
+https://www.dexi.io           ///scraping
+
+
+
+/////////////////5.27//////////////////
+data communication 
+https://send-anywhere.com/
